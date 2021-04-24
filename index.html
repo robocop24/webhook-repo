@@ -1,0 +1,30 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+{% block body %}
+<body>
+
+<h2>Table</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>id</th>
+    <th>auther</th> 
+    <th>action</th>
+    <th>timestamp</th>
+  </tr>
+  {% if myinfo %}
+  {% for i in myinfo %}
+  <tr>
+    <td>{{ id }}</td>
+    <td>{{ auther }}</td>
+    <td>{{ action }}</td>
+    <td>{{ timestamp }}</td>
+  </tr>
+  {% endfor %}
+  {% endif %}
+</table>
+
+</body>
+{% endblock %}
+</html>
