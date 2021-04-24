@@ -27,7 +27,7 @@ def api_gh_message():
             print(id, author, action, timestamp)
         insert_data({"id":id, "author":author, "action":action, "timestamp":timestamp})
         print("-"*50)
-        return render_template('templates/index.html', my_info = {"id":id, "author":author, "action":action, "timestamp":timestamp})
+        return render_template('index.html', my_info = {"id":id, "author":author, "action":action, "timestamp":timestamp})
 
 if __name__ == "__main__":
     app.run(debug=True)
